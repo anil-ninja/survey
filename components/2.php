@@ -3,43 +3,31 @@
 		<span></span>
 		<div class="arrow"><div class="arrow-right"></div></div>
 	</div>
-	<div id="question"></div>
+	<div id="question"></div><br/><br/>
 	<div class="content">
 		<div class="content-wrapper">
-			<div class="multiple">Choose as many as you like</div>
-			<div class="select">
-				<div class="image">
-					<input type="hidden" name="value" value="maid"/>
-					<img src="images/maid.png" alt="maid" width="100" height="68" />
-					
-				</div>
-				<div class="image">
-					<input type="hidden" name="value" value="cook"/>
-					<img src="images/cook.png" alt="cook" width="100" height="68" />
-					
-				</div>
-				<div class="image">
-					<input type="hidden" name="value" value="driver"/>
-					<img src="images/driver.png" alt="driver" width="100" height="69" />
-					
-				</div>
-				<div class="image">
-					<input type="hidden" name="value" value="babysitter"/>
-					<img src="images/babysitter.png" alt="babysitter" width="100" height="66" />
-					
-				</div>
-				<div class="image">
-					<input type="hidden" name="value" value="none"/>
-					<img src="images/none.png" alt="none" width="100" height="100" />
-					
-				</div>
-			</div>
+			<div class="multiple"></div>
+			<input type="checkbox" id="maid" value="maid" name="service[]" />
+			<label for="maid"></label>
+
+			<input type="checkbox" id="cook" value="cook" name="service[]" />
+			<label for="cook"></label>       
+
+			<input type="checkbox" id="driver" value="driver" name="service[]" />
+			<label for="driver"></label>
+
+			<input type="checkbox" id="babysitter" value="babysitter" name="service[]" />
+			<label for="babysitter"></label>
+
+			<input type="checkbox" id="none" value="none" name="service[]" />
+			<label for="none"></label>
+		
 			<div class="clear"></div>
-			<div class="clear"></div>
+			<div class="clear"></div><br/><br/>
 			<div class="message "><span></span><div></div></div>
 			<div class="confirm container">
 				<div class="button-wrapper confirm">
-					<div class="button nav enabled" onclick="loadform(3);"><span>Ok</span><span class="confirm"></span> 	</div>
+					<div class="button nav enabled" onclick="submit(3);"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
 				<div class="aux no-hover">
 					<div class="inset"></div>
@@ -51,3 +39,18 @@
 		</div>
 	</div>
 </div>
+<script>
+	function submit(x){
+		var selected = $('input[name="service[]"]:checked').length ;
+		if(selected == 0){
+			alert("Please Choose a Service");
+		}
+		else {
+			var services = [] ;
+			$('input[name="service[]"]:checked').each(function(i, checked){ 
+			    services[i] = $(checked).val(); 
+			});
+			answer(x, services);
+		}
+	}
+</script>

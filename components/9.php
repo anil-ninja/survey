@@ -3,7 +3,7 @@
 		<span></span>
 		<div class="arrow"><div class="arrow-right"></div></div>
 	</div>
-	<div class="question"><span>Hi {{answer_21509732}}, can I get your contact number?</span></div>
+	<div id="question"></div>
 	<div class="content">
 		<div class="content-wrapper">
 			<div class="attachment-wrapper">

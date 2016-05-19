@@ -3,7 +3,7 @@
 		<span></span>
 		<div class="arrow"><div class="arrow-right"></div></div>
 	</div>
-	<div class="question"><span>Have you paid any service or security charges to any agency to get domestic helper?</span></div>
+	<div id="question"></div>
 	<div class="content">
 		<div class="content-wrapper">
 			<div class="multiple">Choose as many as you like</div>

@@ -1,0 +1,199 @@
+body{
+	height:100%;	background-color:#74C19D;	text-align:center;	vertical-align:middle;
+}
+.button.nav.enabled {
+	cursor: pointer;
+}
+.button.nav {
+	background-color: #f3bca1;	border-color: #9e4214 #9e4214 #672b0d;	border-radius: 3px;	border-style: solid;
+	border-width: 1px;	color: #843711;	cursor: default;	display: inline-block;	font-family: "Lobster Two","Helvetica Neue",sans serif;
+	font-size: 19px;	font-weight: 700;	height: 35px;	line-height: 30px;	max-width: 610px;	overflow: hidden;
+	padding: 5px 12px 0;	text-align: center;	transition: background-color 100ms ease-out 0ms;	width: auto;
+}
+.wrapper {
+	height:100%;	background-color:#74C19D;	text-align:center;	vertical-align:middle;	margin-top:100px;	
+}
+.text {
+	color: #fff;	font-family: "Lobster Two","Helvetica Neue",sans serif;	font-size: 24px;	line-height: 36px;
+}
+.select {
+	width:auto;	text-align:center;	vertical-align:middle;
+}
+.image {
+	width:120px;
+}
+input[type=checkbox]{
+	display:none;
+}
+
+label {
+	float: center;	clear: center;	width: auto;
+}
+
+input#maid[type=checkbox] ~ label{
+    background: url(../images/maid.jpg);    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#maid[type=checkbox]:checked+label{
+	background: url(../images/maid.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#cook[type=checkbox] ~ label{
+    background: url(../images/cook.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#cook[type=checkbox]:checked + label{
+	background: url(../images/cook.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#driver[type=checkbox] ~ label{
+    background: url(../images/driver.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#driver[type=checkbox]:checked + label{
+	background: url(../images/driver.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#babysitter[type=checkbox] ~ label{
+    background: url(../images/babysitter.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#babysitter[type=checkbox]:checked + label{
+	background: url(../images/babysitter.jpg);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#none[type=checkbox] ~ label{
+    background: url(../images/none.png);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#none[type=checkbox]:checked + label{
+	background: url(../images/none.png);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#Yes[type=checkbox] ~ label{
+    background: url(../images/yes.png);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#Yes[type=checkbox]:checked + label{
+	background: url(../images/yes.png);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#No[type=checkbox] ~ label{
+    background: url(../images/no.png);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: green;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}
+input#No[type=checkbox]:checked + label{
+	background: url(../images/no.png);
+    height:100px;
+    width:100px;
+    display:inline-block;
+	padding: 0 0 0 0px;
+	border-color: blue;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 5px;
+	cursor: pointer;
+}

@@ -3,7 +3,7 @@
 		<span></span>
 		<div class="arrow"><div class="arrow-right"></div></div>
 	</div>
-	<div class="question"><span>Rate work quality of your domestic helper according to your need or requirement?</span></div>
+	<div id="question"></div>
 	<div class="content">
 		<div class="content-wrapper">
 			<div class="attachment-wrapper">
