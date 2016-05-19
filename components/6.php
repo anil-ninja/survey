@@ -47,7 +47,6 @@
 			$('input[name="rating"]:checked').each(function(i, checked){ 
 			    services[i] = $(checked).val(); 
 			});
-			alert(services)	; 
 			answer(x, services);
 		}
 	}
