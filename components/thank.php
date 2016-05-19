@@ -25,4 +25,7 @@
 </div>
 <div class="scroll-smooth"></div>
 <script>
+	function reload() {
+		location.reload(); 
+	}
 </script>
