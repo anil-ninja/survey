@@ -61,6 +61,7 @@
 		</style>
 	</head>
 	<body >
+		<div><input type="hidden" id="user_id" value="" /></div>
 		<div id="form" class="intro screen" data-field="true">
 			<div class="content-wrapper">
 				<div class="content">
@@ -90,13 +91,23 @@
 	<script type="text/javascript" src="script/bootbox.js"></script>
 	<script>
 		function loadform(x){
-			$.get('./components/'+x+'.php', function(data) {
-				if (x == 2 || x == 9 || x == 10){
-					var name = $('#name').val();
+			$.ajax({
+				type: "POST",
+				url: "ajax/getQuestions.php",
+				async: false ,
+				data: "question="+x,
+				cache: false,
+				success: function(result){
+					$.get('./components/'+x+'.php', function(data) {
+						if (x == 2 || x == 9 || x == 10){
+							var name = $('#name').val();
+						}
+						$('#form').html('');
+						$('#form').append(data);
+						$("#question").show().html(result);
+						$("#answer").show().html(name); 
+					});
 				}
-				$('#form').html('');
-				$('#form').append(data);
-				$("#answer").show().html(name); 
 			});
 		}
 	</script>
