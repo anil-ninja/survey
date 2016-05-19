@@ -2,17 +2,20 @@
 	include_once 'dbconnect.php';
 	if(isset($_POST['user'])) {
 		$user_id = $_POST['user']; 
-		$qst = $_POST['qst']; 
-		$qst_id = ($qst-1);
+		$qst = $_POST['qst'];
+		if($qst == 'thank'){
+			$qst_id = 10 ;
+		} 
+		else $qst_id = (intval($qst)-1);
 		$response = $_POST['response']; 
 		switch ($qst_id) {
-			case '9':
-				mysqli_query($db_handle,"UPDATE users SET 'mobile' = $response where id = $user_id; ") ;
+			case 9:
+				mysqli_query($db_handle,"UPDATE users SET mobile = '$response' where id = '$user_id'; ") ;
 				echo "true";
 				break;
 			
-			case '10':
-				mysqli_query($db_handle,"UPDATE users SET 'email' = $response where id = $user_id; ") ;
+			case 10:
+				mysqli_query($db_handle,"UPDATE users SET email = '$response' where id = '$user_id'; ") ;
 				echo "true";
 				break;
 

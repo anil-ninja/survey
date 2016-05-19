@@ -40,7 +40,7 @@
 	function submit(x){
 		var selected = $('input[name="service"]:checked').length ;
 		if(selected == 0){
-			alert("Please Choose a Service");
+			alert("Please Give Your Opinion");
 		}
 		else {
 			var services = [] ;

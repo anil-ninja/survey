@@ -36,6 +36,7 @@
 <script>
 	function submit(x){
 		var name  = $('#name').val();
+		$('#username').val(name);
 		var result = name.replace(/ /g, "");
 		if(result == "" || result.length < 3 || result == null){
 			alert("Please Enter Valid Name");

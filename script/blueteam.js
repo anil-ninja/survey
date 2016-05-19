@@ -1,5 +1,4 @@
 function validateEmail(fld) {
-  var error="";
   var tfld = trim(fld);                        // value of field with whitespace trimmed off
   var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/ ;
   if (!emailFilter.test(tfld)) {              //test email for illegal characters
@@ -30,6 +29,10 @@ function validatePhone(fld) {
   return result;
 }
 
+function trim(s){
+  return s.replace(/^\s+|\s+$/, '');
+}
+
 function answer(x, response){
   var user_id = $("#user_id").val();
   dataString = "user=" + user_id + "&qst=" + x + "&response=" + response ;
@@ -54,9 +57,7 @@ function loadform(x){
     cache: false,
     success: function(result){
       $.get('./components/'+x+'.php', function(data) {
-        if (x == 2 || x == 9 || x == 10){
-          var name = $('#name').val();
-        }
+        var name = $('#username').val();
         $('#form').html('');
         $('#form').append(data);
         $("#question").show().html(result);
