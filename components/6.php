@@ -3,7 +3,7 @@
 		<span></span>
 		<div class="arrow"><div class="arrow-right"></div></div>
 	</div>
-	<div id="question"></div><br/><br/>
+	<div class="quest"  id="question"></div><br/><br/>
 	<div class="content">
 		<div class="content-wrapper">
 			<div class="attachment-wrapper">

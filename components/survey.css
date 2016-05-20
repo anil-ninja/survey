@@ -1,5 +1,5 @@
 body{
-	height:100%;	background-color:#74C19D;	text-align:center;	vertical-align:middle;
+	height:100%;	background-color:#74C19D; text-align:center;  vertical-align:middle;
 }
 .button.nav.enabled {
 	cursor: pointer;
@@ -7,20 +7,34 @@ body{
 .button.nav {
 	background-color: #f3bca1;	border-color: #9e4214 #9e4214 #672b0d;	border-radius: 3px;	border-style: solid;
 	border-width: 1px;	color: #843711;	cursor: default;	display: inline-block;	font-family: "Lobster Two","Helvetica Neue",sans serif;
-	font-size: 19px;	font-weight: 700;	height: 35px;	line-height: 30px;	max-width: 610px;	overflow: hidden;
-	padding: 5px 12px 0;	text-align: center;	transition: background-color 100ms ease-out 0ms;	width: auto;
+	font-size: 36px;	font-weight: 700;	height: 55px;	line-height: 45px;	max-width: 610px;	overflow: hidden;
+	padding: 10px 12px 0;	text-align: center;	transition: background-color 100ms ease-out 0ms;	width: auto;
 }
 .wrapper {
-	height:100%;	background-color:#74C19D;	text-align:center;	vertical-align:middle;	margin-top:100px;	
+	height:100%;	background-color:#74C19D;	margin-top:100px;	
 }
 .text {
-	color: #fff;	font-family: "Lobster Two","Helvetica Neue",sans serif;	font-size: 24px;	line-height: 36px;
+	color: #fff;	font-family: "Lobster Two","Helvetica Neue",sans serif;	font-size: 46px;	line-height: 56px;
 }
-.select {
-	width:auto;	text-align:center;	vertical-align:middle;
+.description{
+  color: #000;  font-family: "Lobster Two","Helvetica Neue",sans serif; font-size: 32px;  line-height: 46px;
 }
-.image {
-	width:120px;
+.quest{
+  color: #000;  font-family: "Lobster Two","Helvetica Neue",sans serif; font-size: 46px;  line-height: 56px;
+}
+select {
+	min-width:250px;min-height: 70px; font-size: 36px;  font-weight: 700;
+}
+.attachment img {
+    margin: 60px;
+    -webkit-transform:scale(1.95); /* Safari and Chrome */
+    -moz-transform:scale(1.95); /* Firefox */
+    -ms-transform:scale(1.95); /* IE 9 */
+    -o-transform:scale(1.95); /* Opera */
+     transform:scale(1.95);
+}
+input{
+  min-width:120px;min-height: 70px; font-size: 36px;  font-weight: 700;
 }
 input[type=checkbox]{
 	display:none;
