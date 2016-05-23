@@ -4,8 +4,13 @@
 	    $username = "rajnish90";
 	    $password = "redhat123";
 	    $senderid = "BLUETM";
-	    $message = "Dear ".$name.", we have received payment of 1000 Rs for SR: 12 by reej EMP_ID: BT-15-12 at "
-	            .date("Y-m-d H:i:s") ;
+	    $message = "Dear ".$name.",
+	    			Thank you for your valuable time.
+	    			To get relief from domestic helper on leave.
+	    			Book Now on BlueTeam: 
+	    			http://goo.gl/545wov
+	    			+919599075355 
+	    			Thank you" ;
 	    $url = "http://www.smsjust.com/blank/sms/user/urlsms.php?".
 	        "username=".$username.
 	        "&pass=".$password.
