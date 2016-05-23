@@ -59,7 +59,7 @@
 					$("#user_id").val(result);
 				}
 			});
-			loadform(x);
+			loadform(9);
 		}
 	}
 </script>
