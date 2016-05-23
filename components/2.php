@@ -40,6 +40,12 @@
 	</div>
 </div>
 <script>
+	$(':checkbox').on('change',function(){
+		var th = $('#none'), name = th.prop('name'); 
+		if(th.is(':checked')){
+		    $(':checkbox[name="'  + name + '"]').not($(this)).prop('checked',false);   
+		}
+	});
 	function submit(x){
 		var selected = $('input[name="service[]"]:checked').length ;
 		if(selected == 0){

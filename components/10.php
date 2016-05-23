@@ -18,7 +18,7 @@
 			</div>
 			<div class="clear"></div>
 			<div class="message "><span></span><div></div></div>
-			<!-- <div class="confirm container">
+			<div class="confirm container">
 				<div class="button-wrapper confirm"><br/>	
 					<div class="button nav enabled" onclick="submit('thank');"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
@@ -29,7 +29,7 @@
 					<div class="bd"></div>
 					<div class="overlay"></div>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </div>

@@ -7,11 +7,11 @@
 	<div class="content">
 		<div class="content-wrapper">
 			<div class="multiple"></div>
-			<input type="checkbox" id="Yes" value="Yes" name="service" />
-			<label for="Yes"></label>
+			<input type="checkbox" id="Yes" value="No" name="service" />
+			<label for="Yes">No</label>
 
-			<input type="checkbox" id="No" value="No" name="service" />
-			<label for="No"></label>       
+			<input type="checkbox" id="No" value="Yes" name="service" />
+			<label for="No">Yes</label>       
 
 			<div class="clear"></div>
 			<div class="clear"></div><br/><br/>

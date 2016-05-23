@@ -9,7 +9,8 @@
 			<div class="attachment-wrapper">
 				<div class="control">
 					<select id="leaves" onchange="submit(5);">
-						<option value="0" selected>Does Not Take</option>
+						<option value="0" selected>Select</option>
+						<option value="0" >Does not take</option>
 						<option value="1" >1</option>
 						<option value="2" >2</option>
 						<option value="3" >3</option>
