@@ -41,6 +41,15 @@
 			alert("Please Enter Valid Email");
 		}
 		else {
+			var username = $('#username').val();
+			$.ajax({
+			    type: "POST",
+			    url: "ajax/email.php",
+			    async: false ,
+			    data: "email="+name+"&name="+username,
+			    cache: false,
+			    success: function(result){}
+			});
 			answer(x, name);
 		}
 	}

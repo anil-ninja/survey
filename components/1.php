@@ -35,7 +35,7 @@
 </div>
 <script>
 	function submit(x){
-		var name  = $('#name').val();
+		var name  = toTitleCase($('#name').val());
 		$('#username').val(name);
 		var result = name.replace(/ /g, "");
 		if(result == "" || result.length < 3 || result == null){

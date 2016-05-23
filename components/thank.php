@@ -1,9 +1,7 @@
 <div class="content-wrapper">
 	<div class="content">
 		<div class="media">
-			<div class="attachment" data-attachment='{"image":"https:\/\/d4z6dx8qrln4r.cloudfront.net\/image-57258aa35998a-default.png","width":150,"height":126,"video_source":"","video_id":""}'>
-				<img src="//dkl3g0z0k6qzr.cloudfront.net/quickyformapp/images/lazy.png" data-original="" />
-			</div>
+			<img src="images/smiley-face-with-mustache-and-thumbs-up-interview.png" data-original="" />
 		</div>
 		<div class="text">
 			<span class="strong">Thank you,<span/> <span id="answer" class="strong"></span><br />

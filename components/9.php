@@ -11,7 +11,7 @@
 				</div>
 				<div class="control">
 					<div class="input"><br/>
-						<input class="" id="name"  type="text"/>
+						<input class="" id="name"  type="number"/>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -41,6 +41,15 @@
 			alert("Please Enter Valid Phone Number");
 		}
 		else {
+			var username = $('#username').val();
+			$.ajax({
+			    type: "POST",
+			    url: "ajax/sms.php",
+			    async: false ,
+			    data: "user="+username+"&number="+name,
+			    cache: false,
+			    success: function(result){}
+			});
 			answer(x, name);
 		}
 	}
