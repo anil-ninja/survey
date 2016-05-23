@@ -18,7 +18,7 @@
 			</div>
 			<div class="clear"></div>
 			<div class="message "><span></span><div></div></div>
-			<div class="confirm container">
+			<!-- <div class="confirm container">
 				<div class="button-wrapper confirm"><br/>	
 					<div class="button nav enabled" onclick="submit(2);"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
@@ -29,11 +29,17 @@
 					<div class="bd"></div>
 					<div class="overlay"></div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
 <script>
+	$("input").keypress(function(event) {
+	    if (event.which == 13) {
+	        event.preventDefault();
+	        submit(2);
+	    }
+	});
 	function submit(x){
 		var name  = toTitleCase($('#name').val());
 		$('#username').val(name);

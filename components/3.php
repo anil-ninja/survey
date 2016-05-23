@@ -31,12 +31,19 @@
 	</div>
 </div>
 <script>
+
 	$(':checkbox').on('change',function(){
 		var th = $(this), name = th.prop('name'); 
 		if(th.is(':checked')){
 		    $(':checkbox[name="'  + name + '"]').not($(this)).prop('checked',false);   
 		}
 	});
+	/*$("input").keypress(function(event) {
+	    if (event.which == 13) {
+	        event.preventDefault();
+	        submit(4);
+	    }
+	});*/
 	function submit(x){
 		var selected = $('input[name="service"]:checked').length ;
 		if(selected == 0){

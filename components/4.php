@@ -8,7 +8,7 @@
 		<div class="content-wrapper">
 			<div class="attachment-wrapper">
 				<div class="control">
-					<select id="leaves">
+					<select id="leaves" onchange="submit(5);">
 						<option value="0" selected>Does Not Take</option>
 						<option value="1" >1</option>
 						<option value="2" >2</option>
@@ -24,7 +24,7 @@
 			<div class="clear"></div>
 			<div class="message "><span></span><div></div></div><br/><br/>
 			<div class="message "><span></span><div></div></div>
-			<div class="confirm container">
+			<!-- <div class="confirm container">
 				<div class="button-wrapper confirm">
 					<div class="button nav enabled" onclick="submit(5);"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
@@ -34,7 +34,7 @@
 					<div class="bd"></div>
 					<div class="overlay"></div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
