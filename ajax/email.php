@@ -1,5 +1,5 @@
 <?php
-	function sendMail($to, $subject, $message)6{
+	function sendMail($to, $subject, $message){
 
 	    // Always set content-type when sending HTML email
 	    $headers = "MIME-Version: 1.0" . "\r\n";
@@ -14,12 +14,14 @@
 	if(isset($_POST['email'])) {
 		$email = $_POST['email']; 
 		$name = $_POST['name'];
-		$emailMessage = "Dear Customer,<br/><br/>
-		For any clarifications contact us at 95990 75355.<br/><br/>
-
-		This service is a part of our constant endeavor to deliver Superior Customer Service Experience to our valued customers. At BlueTeam, we value your feedback. Please write to us at feeds@blueteam.in, contact your Client Engagement Manager (CEM).
-		If you would like to view any other details regarding your account, please login to our mobile app. This is a system generated message. Please do not reply to this e-mail.";
-
-		sendMail($email, "BlueTeam: Payment received successfully of Rs.", $emailMessage);
+		$emailMessage = "Dear ".$name.",<br/><br/>
+Thank you for your valuable time to make survey happen.<br/>
+To get relief from domestic helper on leave.<br/>
+Book Now on BlueTeam: <br/>
+<a href='http://goo.gl/545wov' target='_blank' >BlueTeam App</a><br/> or <img src='../images/phone.png'/> / <img src='../images/whatsapp.png'/>  +91 95990 75355 <br/><br/>
+Thank you,
+BlueTeam.in 
+<img src='../images/logo.png'/>";
+		sendMail($email, "Survey", $emailMessage);
 	}
 ?>
