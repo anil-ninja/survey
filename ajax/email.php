@@ -18,10 +18,10 @@
 Thank you for your valuable time to make survey happen.<br/>
 To get relief from domestic helper on leave.<br/>
 Book Now on BlueTeam: <br/>
-<a href='http://goo.gl/545wov' target='_blank' >BlueTeam App</a><br/> or <img src='../images/phone.png'/> / <img src='../images/whatsapp.png'/>  +91 95990 75355 <br/><br/>
-Thank you,
+<a href='http://goo.gl/545wov' target='_blank' >BlueTeam App</a><br/> or <img src='images/phone.png' data-original=''/> / <img src='images/whatsapp.png' data-original=''/>  +91 95990 75355 <br/><br/>
+Thank you,<br/><br/>
 BlueTeam.in 
-<img src='../images/logo.png'/>";
+<img src='images/logo.png' data-original='' />";
 		sendMail($email, "Survey", $emailMessage);
 	}
 ?>
