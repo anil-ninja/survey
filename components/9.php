@@ -2,7 +2,7 @@
 	<div class="item">
 		<div class="arrow"><div class="arrow-right"></div></div>
 	</div>
-	<div class="quest" id="question"></div>
+	<div class="quest" id="question">Hi <span id="answer"></span>, may I know your contact number?</div>
 	<div class="content">
 		<div class="content-wrapper">
 			<div class="attachment-wrapper">

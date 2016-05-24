@@ -53,14 +53,14 @@ function answer(x, response){
   
 }
 function loadform(x){
-  /*$.get('./components/'+x+'.php', function(data) {
+  $.get('./components/'+x+'.php', function(data) {
     var name = $('#username').val();
     $('#form').html('');
     $('#form').append(data);
     //$("#question").show().html(result);
     $("#answer").show().html(name); 
-  });*/
-  $.ajax({
+  });
+  /*$.ajax({
     type: "POST",
     url: "ajax/getQuestions.php",
     async: false ,
@@ -75,5 +75,5 @@ function loadform(x){
         $("#answer").show().html(name); 
       });
     }
-  });
+  });*/
 }
