@@ -20,7 +20,7 @@
 			<div class="message "><span></span><div></div></div>
 			<div class="confirm container">
 				<div class="button-wrapper confirm"><br/>	
-					<div class="button nav enabled" onclick="submit(10);"><span>Ok</span><span class="confirm"></span> 	</div>
+					<div class="button nav enabled" onclick="submit(10);" id="submit1"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
 				
 				<div class="aux no-hover">
@@ -41,10 +41,12 @@
 	    }
 	});
 	function submit(x){
+		$("#submit1").attr('disabled','disabled');
 		var name  = $('#name').val();
 		var result = name.replace(/ /g, "");
 		if(validatePhone(result) != true){
 			alert("Please Enter Valid Phone Number");
+			$("#submit1").removeAttr('disabled');
 		}
 		else {
 			answer(x, name);

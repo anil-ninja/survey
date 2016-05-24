@@ -27,7 +27,7 @@
 			<div class="message "><span></span><div></div></div>
 			<div class="confirm container">
 				<div class="button-wrapper confirm">
-					<div class="button nav enabled" onclick="submit(5);"><span>Ok</span><span class="confirm"></span> 	</div>
+					<div class="button nav enabled" onclick="submit(5);" id="submit1"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
 				<div class="aux no-hover">
 					<div class="inset"></div>
@@ -41,6 +41,7 @@
 </div>
 <script>
 	function submit(x){
+		$("#submit1").attr('disabled','disabled');
 		var services = $("#leaves").val(); 
 		answer(x, services);
 	}

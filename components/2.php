@@ -27,7 +27,7 @@
 			<div class="message "><span></span><div></div></div>
 			<div class="confirm container">
 				<div class="button-wrapper confirm">
-					<div class="button nav enabled" onclick="submit(3);"><span>Ok</span><span class="confirm"></span> 	</div>
+					<div class="button nav enabled" onclick="submit(3);" id="submit1"><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
 				<div class="aux no-hover">
 					<div class="inset"></div>
@@ -47,9 +47,11 @@
 		}
 	});
 	function submit(x){
+		$("#submit1").attr('disabled','disabled');
 		var selected = $('input[name="service[]"]:checked').length ;
 		if(selected == 0){
 			alert("Please Choose a Service");
+			$("#submit1").removeAttr('disabled');
 		}
 		else {
 			var services = [] ;

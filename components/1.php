@@ -20,7 +20,7 @@
 			<div class="message "><span></span><div></div></div>
 			<div class="confirm container">
 				<div class="button-wrapper confirm"><br/>	
-					<div class="button nav enabled" onclick="submit(2);"><span>Ok</span><span class="confirm"></span> 	</div>
+					<div class="button nav enabled" onclick="submit(2);" id="submit1" ><span>Ok</span><span class="confirm"></span> 	</div>
 				</div>
 				
 				<div class="aux no-hover">
@@ -41,12 +41,14 @@
 	    }
 	});
 	function submit(x){
+		$("#submit1").attr('disabled','disabled');
 		var name  = toTitleCase($('#name').val());
 		$('#username').val(name);
 		var result = name.replace(/ /g, "");
 		if(result == "" || result.length < 3 || result == null){
 			alert("Please Enter Valid Name");
 			return false;
+			$("#submit1").removeAttr('disabled');
 		}
 		else {
 			loadform(x);
