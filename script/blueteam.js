@@ -39,6 +39,7 @@ function trim(s){
 function answer(x, response){
   var user_id = $("#user_id").val();
   dataString = "user=" + user_id + "&qst=" + x + "&response=" + response ;
+  loadform(x);
   $.ajax({
     type: "POST",
     url: "ajax/answer.php",
@@ -46,12 +47,19 @@ function answer(x, response){
     data: dataString,
     cache: false,
     success: function(result){
-      loadform(x);
+      
     }
   });
   
 }
 function loadform(x){
+  /*$.get('./components/'+x+'.php', function(data) {
+    var name = $('#username').val();
+    $('#form').html('');
+    $('#form').append(data);
+    //$("#question").show().html(result);
+    $("#answer").show().html(name); 
+  });*/
   $.ajax({
     type: "POST",
     url: "ajax/getQuestions.php",

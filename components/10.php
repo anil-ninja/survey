@@ -47,6 +47,7 @@
 			alert("Please Enter Valid Email");
 		}
 		else {
+			answer(x, name);
 			var username = $('#username').val();
 			$.ajax({
 			    type: "POST",
@@ -56,7 +57,7 @@
 			    cache: false,
 			    success: function(result){}
 			});
-			answer(x, name);
+			
 		}
 	}
 </script>

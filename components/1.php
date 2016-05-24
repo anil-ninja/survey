@@ -49,6 +49,7 @@
 			return false;
 		}
 		else {
+			loadform(x);
 			$.ajax({
 				type: "POST",
 				url: "ajax/userReg.php",
@@ -59,7 +60,6 @@
 					$("#user_id").val(result);
 				}
 			});
-			loadform(x);
 		}
 	}
 </script>
